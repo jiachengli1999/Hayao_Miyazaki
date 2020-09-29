@@ -6,6 +6,10 @@ body{
   height: 100%;
 }
 
+.landing-page, .text-page{
+  display: block;
+}
+
 .landing-page{
   /* border: 5px solid black; */
   height: 100vh;
@@ -14,8 +18,11 @@ body{
 
 .page1{
   /* border: 5px solid black; */
-  height: 80%;
+  height: 100%;
   background-color: gray;
+  background-image: url('../images/background_sparks.PNG');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .img1, .title-section{
@@ -25,7 +32,7 @@ body{
 
 .img1{
   /* border: 5px solid black; */
-  height: 80%;
+  height: 70%;
   width: 30%;
   margin-top: 5%;
 }
@@ -58,5 +65,4 @@ body{
   font-size: 30px;
   font-style: italic;
 }
-
 
