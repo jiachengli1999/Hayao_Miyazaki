@@ -44,13 +44,17 @@
 .character-heading{
     margin-bottom: 100px;
 }
-.element1, .element2, .element3{
+.element1, .element2, .element3, .element4{
     /* parallax effect from W3  */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }
 .content-container h1{
     font-size: 100px;
@@ -61,19 +65,14 @@
 
 .element1{
     background-image: url(../images/mob_faces.PNG);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
 }
 .element2{
     background-image: url(../images/cooking.PNG);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+
 }
 .element3{
     background-image: url(../images/howl_society.PNG);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+}
+.element4{
+    background-image: url(../images/howl_society.PNG);
 }
