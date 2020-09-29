@@ -1,4 +1,5 @@
-
+/* Used https://www.youtube.com/watch?v=DlUV97e51uc as reference for 
+skewed divs */
 
 .header{
     position: relative;
@@ -20,3 +21,87 @@
     font-size: 70px;
 }
 
+.custom-div{
+    width: 100%;
+    position: relative;
+}
+
+#skew1{
+    background: url(../images/totoro.PNG);
+    background-size: cover;
+    background-position: center center;
+    z-index: 10;
+}
+#skew2{
+    background: url(../images/spirited_away.PNG);
+    background-size: cover;
+    background-position: center center;
+    z-index: 9;
+}
+#skew3{
+    background: url(../images/howl.PNG);
+    background-size: cover;
+    background-position: center center;
+    z-index: 8;
+}
+
+/* Fill background with inherit color  */
+.custom-div:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* Bring to the back of the skew that is inherited  */
+    z-index: -1; 
+    background: inherit;
+    /* remove margin so that content will connect  */
+    bottom: 0;
+    /*Allow for transformation at bottom of div */
+    content: ''; 
+}
+
+#skew1:after, #skew3:after{
+    transform-origin: left bottom;
+    transform: skewY(3deg);
+    border-bottom: 1px solid yellow;
+}
+#skew2:after{
+    transform-origin: right bottom;
+    transform: skewY(-3deg);
+    border-bottom: 1px solid yellow;
+}
+
+.content{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 300px 50px;
+    height: auto;
+    /* border: 2px solid white; */
+}
+
+.content h3, .content p{
+    /* min-height: 110px; */
+    /* border: 2px solid white; */
+    width: 40%;
+    height: auto;
+    color: white;
+    /* text shadow reference: https://stackoverflow.com/questions/4919076/outline-effect-to-text  */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.content h3{
+    margin-top:-10%; 
+    font-size: 50px;
+}
+
+.content p{
+    font-size: 25px;
+    margin-left: 0;
+}
+
+.right h3, .right p{
+    float: right;
+}
+.right p{
+    margin: 0;
+}
