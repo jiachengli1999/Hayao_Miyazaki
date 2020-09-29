@@ -27,6 +27,7 @@
   height: 70%;
   width: 30%;
   margin-top: 5%;
+  object-fit: contain;
 }
 
 .title-section{

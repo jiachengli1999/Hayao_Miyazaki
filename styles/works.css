@@ -7,9 +7,9 @@ skewed divs */
     background-size: cover;
     background-position: center center;
     z-index: 11;
-    height: 30vh;
+    height: 60vh;
     /* Add space to top so move inner divs down  */
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
 }
 
 .header-title{
@@ -19,6 +19,32 @@ skewed divs */
     margin: auto;
     text-align: center;
     font-size: 70px;
+}
+
+.theme1, .theme2, .theme3{
+    border: 2px solid black;
+    float: left;
+    width: 20%;
+    margin-top: 100px;
+    padding: 10px 10px;
+    margin-left: 8%;
+    height: 30vh;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    font-size: 30px;
+    background-size: cover;
+    /* background-position: center center; */
+
+}
+.theme1{
+    background: url(../images/feminism.PNG);
+}
+.theme2{
+    background: url(../images/family.PNG);
+}
+.theme3{
+    background: url(../images/environmentalism.PNG);
 }
 
 .custom-div{
@@ -39,7 +65,7 @@ skewed divs */
     z-index: 9;
 }
 #skew3{
-    background: url(../images/howl.PNG);
+    background: url(../images/princess_mononoke.PNG);
     background-size: cover;
     background-position: center center;
     z-index: 8;
@@ -73,7 +99,7 @@ skewed divs */
 .content{
     display: block;
     overflow: hidden;
-    text-align: center;
+    /* text-align: center; */
     padding: 300px 50px;
     height: auto;
     /* border: 2px solid white; */
@@ -104,4 +130,9 @@ skewed divs */
 }
 .right p{
     margin: 0;
+}
+
+.content p img{
+    width: 100px;
+    height: auto;
 }
