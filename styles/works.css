@@ -76,7 +76,7 @@ skewed divs */
     position: absolute;
     width: 100%;
     height: 100%;
-    /* Bring to the back of the skew that is inherited  */
+    /* Bring to the front of the skew that is inherited  */
     z-index: -1; 
     background: inherit;
     /* remove margin so that content will connect  */
@@ -87,12 +87,12 @@ skewed divs */
 
 #skew1:after, #skew3:after{
     transform-origin: left bottom;
-    transform: skewY(3deg);
+    transform: skewY(2deg);
     border-bottom: 1px solid yellow;
 }
 #skew2:after{
     transform-origin: right bottom;
-    transform: skewY(-3deg);
+    transform: skewY(-2deg);
     border-bottom: 1px solid yellow;
 }
 
