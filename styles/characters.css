@@ -12,6 +12,9 @@
 .header{
     text-align: center;
 }
+.header-title{
+    font-size: 70px;
+}
 
 .header > h1{
     margin: 0;
