@@ -44,7 +44,7 @@
 .character-heading{
     margin-bottom: 100px;
 }
-.element1, .element2, .element3, .element4{
+.element1, .element2, .element3, .element4, .element5, .element6, .element7{
     /* parallax effect from W3  */
     background-attachment: fixed;
     background-position: center;
@@ -74,5 +74,14 @@
     background-image: url(../images/howl_society.PNG);
 }
 .element4{
-    background-image: url(../images/howl_society.PNG);
+    background-image: url(../images/female_protagonists.PNG);
+}
+.element5{
+    background-image: url(https://media.giphy.com/media/J4FsxFgZgN2HS/giphy.gif);
+}
+.element6{
+    background-image: url(https://media.giphy.com/media/gDI6uVVVYEWVG/giphy.gif);
+}
+.element7{
+    background-image: url(https://media.giphy.com/media/sxtxMmbHzBYru/giphy.gif);
 }
