@@ -1,0 +1,28 @@
+#impact-page{
+    background-image: url("../images/background_ghibli2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f6f3eb;
+}
+
+.header{
+    text-align: center;
+}
+
+.header > h1{
+    font-size: 2cm;
+    margin: 0;
+    padding: 1%;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content > p {
+    text-align: center;
+    font-size: 1cm;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
